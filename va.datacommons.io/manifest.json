@@ -23,6 +23,14 @@
     "spark": "quay.io/cdis/gen3-spark:1.0.0",
     "tube": "quay.io/cdis/tube:0.1.3"
   },
+  "arranger": {
+    "project_id": "mickey_0",
+    "auth_filter_field": "auth_resource_path",
+    "auth_filter_node_types": ["demographic"]
+  },
+  "tube": {
+    "es_index_name": "mickey"
+  },
   "jupyterhub": {
     "enabled": "yes"
   },
@@ -36,5 +44,8 @@
     "logs_bucket": "logs-vadcprod-gen3",
     "sync_from_dbgap": "False",
     "useryaml_s3path": "s3://cdis-gen3-users/vadcprod/user.yaml"
+  },
+  "canary": {
+    "default": 0
   }
 }
