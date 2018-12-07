@@ -7,21 +7,21 @@
     "autodeploy": "yes"
   },
   "versions": {
-    "arborist": "quay.io/cdis/arborist:master",
-    "arranger": "quay.io/cdis/arranger:master",
-    "arranger-adminapi": "quay.io/cdis/arranger-server:fix_adminserver",
+    "arborist": "quay.io/cdis/arborist:1.0.0",
+    "arranger": "quay.io/cdis/arranger:1.0.3",
     "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
-    "fence": "quay.io/cdis/fence:master",
-    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
-    "indexd": "quay.io/cdis/indexd:master",
-    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
-    "peregrine": "quay.io/cdis/peregrine:feat_bagit",
-    "pidgin": "quay.io/cdis/pidgin:master",
-    "portal": "quay.io/cdis/data-portal:master",
+    "arranger-adminapi": "quay.io/cdis/arranger-server:master",
+    "fence": "quay.io/cdis/fence:2.4.0",
+    "indexd": "quay.io/cdis/indexd:1.0.10",
+    "peregrine": "quay.io/cdis/peregrine:1.0.2",
+    "pidgin": "quay.io/cdis/pidgin:1.0.0",
     "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
-    "sheepdog": "quay.io/cdis/sheepdog:master",
-    "spark": "quay.io/cdis/gen3-spark:feat_init",
-    "tube": "quay.io/cdis/tube:master"
+    "sheepdog": "quay.io/cdis/sheepdog:1.1.3",
+    "portal": "quay.io/cdis/data-portal:2.0.1",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
+    "spark": "quay.io/cdis/gen3-spark:1.0.0",
+    "tube": "quay.io/cdis/tube:0.1.3"
   },
   "arranger": {
     "project_id": "mickey_0",
@@ -32,18 +32,18 @@
     "es_index_name": "mickey"
   },
   "jupyterhub": {
-    "enabled": "no"
+    "enabled": "yes"
   },
   "global": {
-    "environment": "qaplanetv1",
-    "hostname": "qa-mickey.planx-pla.net",
-    "revproxy_arn": "arn:aws:acm:us-east-1:707767160287:certificate/c676c81c-9546-4e9a-9a72-725dd3912bc8",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/master/schema.json",
+    "environment": "vadcprod",
+    "hostname": "va.datacommons.io",
+    "revproxy_arn": "arn:aws:acm:us-east-1:663707118480:certificate/092a9df9-6b43-4e4f-bf37-2189a58f8478",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/0.2.4/schema.json",
     "portal_app": "gitops",
-    "kube_bucket": "kube-qaplanetv1-gen3",
-    "logs_bucket": "logs-qaplanetv1-gen3",
+    "kube_bucket": "kube-vadcprod-gen3",
+    "logs_bucket": "logs-vadcprod-gen3",
     "sync_from_dbgap": "False",
-    "useryaml_s3path": "s3://cdis-gen3-users/qa/user.yaml"
+    "useryaml_s3path": "s3://cdis-gen3-users/vadcprod/user.yaml"
   },
   "canary": {
     "default": 0
