@@ -38,7 +38,7 @@
     "environment": "vadcprod",
     "hostname": "va.datacommons.io",
     "revproxy_arn": "arn:aws:acm:us-east-1:663707118480:certificate/092a9df9-6b43-4e4f-bf37-2189a58f8478",
-    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/0.2.4/schema.json",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/0.3.0/schema.json",
     "portal_app": "gitops",
     "kube_bucket": "kube-vadcprod-gen3",
     "logs_bucket": "logs-vadcprod-gen3",
