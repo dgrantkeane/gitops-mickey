@@ -1,0 +1,52 @@
+{
+  "notes": [
+    "This is the dev environment manifest",
+    "That's all I have to say"
+  ],
+  "jenkins": {
+    "autodeploy": "yes"
+  },
+  "versions": {
+    "arborist": "quay.io/cdis/arborist:1.0.0",
+    "arranger": "quay.io/cdis/arranger:1.0.3",
+    "arranger-dashboard": "quay.io/cdis/arranger-dashboard:master",
+    "arranger-adminapi": "quay.io/cdis/arranger-server:master",
+    "aws-es-proxy": "abutaha/aws-es-proxy:0.8",
+    "fence": "quay.io/cdis/fence:2.4.0",
+    "indexd": "quay.io/cdis/indexd:1.0.10",
+    "peregrine": "quay.io/cdis/peregrine:1.0.2",
+    "pidgin": "quay.io/cdis/pidgin:1.0.0",
+    "revproxy": "quay.io/cdis/nginx:1.15.5-ctds",
+    "sheepdog": "quay.io/cdis/sheepdog:1.1.3",
+    "portal": "quay.io/cdis/data-portal:2.2.0",
+    "fluentd": "fluent/fluentd-kubernetes-daemonset:v1.2-debian-cloudwatch",
+    "jupyterhub": "quay.io/occ_data/jupyterhub:master",
+    "spark": "quay.io/cdis/gen3-spark:1.0.0",
+    "tube": "quay.io/cdis/tube:0.1.3"
+  },
+  "arranger": {
+    "project_id": "mickey_0",
+    "auth_filter_field": "auth_resource_path",
+    "auth_filter_node_types": ["demographic"]
+  },
+  "tube": {
+    "es_index_name": "mickey"
+  },
+  "jupyterhub": {
+    "enabled": "yes"
+  },
+  "global": {
+    "environment": "vadcprod",
+    "hostname": "va.datacommons.io",
+    "revproxy_arn": "arn:aws:acm:us-east-1:663707118480:certificate/092a9df9-6b43-4e4f-bf37-2189a58f8478",
+    "dictionary_url": "https://s3.amazonaws.com/dictionary-artifacts/vadictionary/0.4.0/schema.json",
+    "portal_app": "gitops",
+    "kube_bucket": "kube-vadcprod-gen3",
+    "logs_bucket": "logs-vadcprod-gen3",
+    "sync_from_dbgap": "False",
+    "useryaml_s3path": "s3://cdis-gen3-users/vadcprod/user.yaml"
+  },
+  "canary": {
+    "default": 0
+  }
+}
