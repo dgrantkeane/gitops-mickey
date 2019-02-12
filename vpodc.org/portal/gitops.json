@@ -160,14 +160,6 @@
       "buttons": [
         {
           "enabled": false,
-          "type": "data",
-          "title": "Download Clinical",
-          "leftIcon": "user",
-          "rightIcon": "download",
-          "fileName": "clinical.json"
-        },
-        {
-          "enabled": false,
           "type": "manifest",
           "title": "Download Manifest",
           "leftIcon": "datafile",
