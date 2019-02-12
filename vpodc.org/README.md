@@ -1,6 +1,6 @@
 # TL;DR
 
-gen3 configuration for va.datacommons.io
+gen3 configuration for vpodc.org
 
 ## Configuration Details
 
@@ -31,7 +31,7 @@ devterm$ aws s3api ...
 
 ### ETL
 
-The VA ETL is custom.  Rather than extracting data from
+The VPO ETL is custom.  Rather than extracting data from
 the gen3 metadata database, the mickey ETL pulls data from
 Excel spreadsheets and other metadata files provided by the client
 (see below).  Check with Andrew for details on how to run the ETL,
