@@ -146,19 +146,19 @@
     "charts": {
       "Chicago_ID": {
         "chartType": "count",
-        "title": "Demographics"
+        "title": "Patients"
       },
-      "Gender":{
-        "chartType": "bar",
-        "title": "Gender"
-      },
-      "Race":{
+      "Oncology_Primary__ICDOSite":{
         "chartType": "pie",
-        "title": "Race"
+        "title": "Site (ICD-O)"
       },
-      "Ethnicity":{
+      "Oncology_Primary__Radiation":{
+        "chartType": "pie",
+        "title": "Radiation"
+      },
+      "Oncology_Primary__Chemotherapy":{
         "chartType": "bar",
-        "title": "Ethnicity"
+        "title": "Chemotherapy"
       }
     },
     "filters": {
@@ -169,7 +169,10 @@
             "project_id",
             "Gender",
             "Race",
-            "Ethnicity"
+            "Ethnicity",
+            "Oncology_Primary.ICDOSite",
+            "Oncology_Primary.Radiation",
+            "Oncology_Primary.Chemotherapy"
           ]
         }
       ]
