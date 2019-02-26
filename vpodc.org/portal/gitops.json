@@ -149,7 +149,7 @@
         "title": "Patients"
       },
       "Oncology_Primary__ICDOSite":{
-        "chartType": "pie",
+        "chartType": "bar",
         "title": "Site (ICD-O)"
       },
       "Oncology_Primary__Radiation":{
@@ -157,7 +157,7 @@
         "title": "Radiation"
       },
       "Oncology_Primary__Chemotherapy":{
-        "chartType": "bar",
+        "chartType": "pie",
         "title": "Chemotherapy"
       }
     },
