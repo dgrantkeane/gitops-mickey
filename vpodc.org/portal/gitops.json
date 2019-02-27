@@ -170,9 +170,9 @@
             "Gender",
             "Race",
             "Ethnicity",
-            "Oncology_Primary.ICDOSite",
-            "Oncology_Primary.Radiation",
-            "Oncology_Primary.Chemotherapy"
+            "Oncology_Primary__ICDOSite",
+            "Oncology_Primary__Radiation",
+            "Oncology_Primary__Chemotherapy"
           ]
         }
       ]
