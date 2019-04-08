@@ -200,7 +200,8 @@
     "arrangerConfig": {
       "projectId": "search",
       "graphqlField": "patients",
-      "index": ""
+      "index": "",
+      "nodeCountField": "Chicago_ID"
     }
   }
 }
