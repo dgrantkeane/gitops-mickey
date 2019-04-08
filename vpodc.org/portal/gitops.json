@@ -149,7 +149,7 @@
     "explorer": true
   },
   "analysisTools": [ "vaGWAS", "ndhVirus" ],
-  "arrangerConfig": {
+  "dataExplorerConfig": {
     "charts": {
       "Chicago_ID": {
         "chartType": "count",
@@ -184,20 +184,23 @@
         }
       ]
     },
+    "buttons": [
+      {
+        "enabled": false,
+        "type": "manifest",
+        "title": "Download Manifest",
+        "leftIcon": "datafile",
+        "rightIcon": "download",
+        "fileName": "manifest.json"
+      }
+    ],
     "table": {
-      "buttons": [
-        {
-          "enabled": false,
-          "type": "manifest",
-          "title": "Download Manifest",
-          "leftIcon": "datafile",
-          "rightIcon": "download",
-          "fileName": "manifest.json"
-        }
-      ]
+      "enabled": true
     },
-    "projectId": "search",
-    "graphqlField": "patients",
-    "index": ""
+    "arrangerConfig": {
+      "projectId": "search",
+      "graphqlField": "patients",
+      "index": ""
+    }
   }
 }
