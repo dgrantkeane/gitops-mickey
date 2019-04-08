@@ -148,7 +148,7 @@
   "featureFlags": {
     "explorer": true
   },
-  "analysisTools": [ "vaGWAS", "ndhVirus" ],
+  "analysisTools": [ "vaGWAS" ],
   "dataExplorerConfig": {
     "charts": {
       "Chicago_ID": {
