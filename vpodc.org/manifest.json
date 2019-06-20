@@ -97,6 +97,16 @@
       "indexing": "quay.io/cdis/indexs3client:0.0.3"
     }
   },
+  "sower": {
+    "name": "pelican-export",
+    "container": {
+      "name": "job-task",
+      "image": "quay.io/cdis/pelican:master",
+      "pull_policy": "always",
+      "env": []
+    },
+    "restart_policy": "never"
+  },
   "canary": {
     "default": 0
   }
